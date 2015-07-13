@@ -1,0 +1,49 @@
+th {
+	background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+	color: #AAA;
+    text-align: center;
+}
+tr,th,td {
+    border: 1px solid #AAA;
+    padding: 2px;
+}
+lable {
+	width: 100px;
+}
+.form-signin {
+	width: 400px;
+	margin: auto;
+}
+.face:hover {
+    height: 200px;
+    position: absolute;
+}
+.table_id {
+    width: 50px;
+}
+.table_img {
+    width: 40px;
+}
+.table_name {
+    width: 100px;
+}
+.table_num {
+    width: 80px;
+}
+.table_text {
+    width: 120px;
+}
+.table_radio {
+	width: 30px;
+}
+.input_name {
+    width: 80px;
+}
+.input_num {
+    width: 60px;
+}
+.input_text {
+    width: 120px;
+}
+
+

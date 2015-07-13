@@ -1,0 +1,28 @@
+{% include "head.html" %}
+	<form action="/register/" method="post">
+		{% csrf_token %}
+		{{ errors }}
+		<div class="form-group">
+			<label for="InputUn">用户名</label>
+			<input type="text" for="InputUn" name="username" class="form-control" placeholder="1101" required="" autofocus="" />
+		</div>
+		<div class="form-group">
+			<label for="InputPw1">密码</label>
+			<input type="password" id="InputPw1" name="password1" class="form-control" placeholder="Password" required="" />
+		</div>
+		<div class="form-group">
+			<label for="InputPw2">确认密码</label>
+			<input type="password" id="InputPw2" name="password2" class="form-control" placeholder="Password" required="" />
+		</div>
+		<div class="form-group">
+			<label for="InputEmail">电子邮件</label>
+			<input type="email" id="InputEmail" name="email" class="form-control" placeholder="Setsuna@simple.com" required="" />
+		</div>
+		<div class="form-group">
+			<label for="InputNn">昵称</label>
+			<input type="text" id="InputNn" name="nickname" class="form-control" placeholder="Setsuna" required=""  />
+		</div>
+			<input type="submit" value="提交" />
+	</form>
+</body>
+</html>
