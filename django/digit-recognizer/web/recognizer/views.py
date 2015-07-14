@@ -159,6 +159,7 @@ class RegisterForm(forms.Form):
 	username = forms.CharField(max_length=12, label=u"用户名:", widget=forms.TextInput(attrs={"class": 'span2'}))
 	password1 = forms.CharField(max_length=50, label=u"密码:", widget=forms.PasswordInput(attrs={"class": 'span2'}))
 	password2 = forms.CharField(max_length=50, label=u"重复密码:", widget=forms.PasswordInput(attrs={"class": 'span2'}))
-	email = forms.EmailField(max_length=50, label=u"电子邮件:", widget=forms.TextInput(attrs={"class": 'span2'}))
+	#这个在高版本的django上应该可以改成emailfield、emailinput
+	email = forms.CharField(max_length=50, label=u"电子邮件:", widget=forms.TextInput(attrs={"class": 'span2'}))
 	nickname = forms.CharField(max_length=50, label=u"昵称:", widget=forms.TextInput(attrs={"class": 'span2'}))
 	
