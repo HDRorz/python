@@ -1,11 +1,8 @@
 #coding=utf-8 
 import Tkinter
+import tkMessageBox
 import os
 from subprocess import Popen
-# import sys
-
-# reload(sys)
-# sys.setdefaultencoding( "utf-8" )
 
 class TkButtonDemo:
 	def __init__(self):
@@ -22,6 +19,7 @@ class TkButtonDemo:
 		#result = os.system(b1cmd)
 		#result = os.system(u'start E:\大二\大二第一学期\C++\0.0.exe')
 		process = Popen(b1cmd)
+		tkMessageBox.showinfo(u'提示', u'任务已完成')
 
 
 
