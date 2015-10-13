@@ -8,9 +8,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = patterns('',
     # Examples:
-	#其实并没有写
     url(r'^$', 'web.views.home', name='home'),
-	#用于上传图片
     url(r'^upload/$', 'recognizer.views.upload', name='upload'),
 	url(r'^register/$', 'recognizer.views.user_register', name="register"),
 	url(r'^login/$', 'recognizer.views.user_login', name='login'),
