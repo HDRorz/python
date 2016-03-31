@@ -15,11 +15,12 @@ class TkButtonDemo:
 		self.button1.pack()
 		
 	def Button1Click(self):
-		b1cmd = r'cmd /min E:\大二\大二第一学期\C++\0.0.exe'
+		b1cmd = 'cmd /min ' + os.path.abspath('.') + r'0.0.exe'
 		#result = os.system(b1cmd)
 		#result = os.system(u'start E:\大二\大二第一学期\C++\0.0.exe')
 		process = Popen(b1cmd)
 		tkMessageBox.showinfo(u'提示', u'任务已完成')
+		print "\n"
 
 
 
